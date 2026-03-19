@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title th:text="${title}">Hello</title>
+    <style>
+      body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin: 40px; }
+      .card { max-width: 720px; padding: 20px 24px; border: 1px solid #e5e7eb; border-radius: 12px; }
+      h1 { margin: 0 0 10px; font-size: 22px; }
+      p { margin: 6px 0; color: #374151; }
+      code { background: #f3f4f6; padding: 2px 6px; border-radius: 6px; }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <h1 th:text="${title}">Xin chào!</h1>
+      <p>Nếu bạn thấy trang này, nghĩa là app Spring Boot đã chạy OK.</p>
+      <p>Thời gian server: <code th:text="${time}">time</code></p>
+      <p>URL: <code>/</code></p>
+    </div>
+  </body>
+</html>
